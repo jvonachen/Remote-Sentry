@@ -1,0 +1,161 @@
+
+My HTML5 challenge: Robot Sentry: styled after the original inspiration for
+tower defense games, the second Aliens movie and Lemmings.
+The game starts out with an attract mode like 80's style arcade games. Should
+be able to move forward in sequence or click on any element to play that
+attract element or pause/play.  Show press any key to insert coins, play in
+all attract elements.  Should show copyright all the time.  In this order and
+loops around:
+- title sequence
+- Backstory
+- Example of gameplay, 1 of 10 different examples.
+- Instructions on how to play with examples shown on the side
+  - list of aliens and behaviors
+  - list of mazes
+  - list of remote sentries
+  - list of sentry upgrades and behaviors
+- high scores
+- credits
+- PSA on not using drugs.  Losers use drugs.  Winners play computer games.
+
+At top center have a login system with passcodes.  They are auto-generated,
+unique, and serve as both username and password.  You can attach other
+information to them or not.  There will be buttons for dealing with account
+information and the passcode system.  The passcode will be saved to your
+browser's cookie collection.
+- display the passcode
+- generate a new passcode for this same account.  It's generated because the
+main problem with usernames and passwords is that people often use the same
+passwords for everything.  Not a very secure practice.  This eliminates that
+problem.
+- copy to clipboard, so you can paste it into a different browser on the
+same or a different computer.
+- add account info
+With this system you can play a game, and it will remember your session
+without the need for you to provide any personal information.
+
+menu system on the right side or in the center. Choose the style of maze:
+orthogonal (rectangular shape with square passages, sigma (rectangular outer
+shape with hexagonal passages), delta (rectangular outer shape with
+triangular passages), triangular shape with triangular passages, hexagonal
+shape with hexagonal passages
+- press splash to show the attract mode starting with the splash page
+"cinematic"
+
+Then choose from 10 levels of complexity for a total of 50 different maps
+
+display number of aliens reaching exit.  When 100 of each kind of alien has
+been released and there is a slot for a new one to be release it will release
+the next level alien.  That way there will be a mixture of alien types
+simultaneously.
+10 colored sentries for 10 different kinds each one more useful for defence.
+Each one can be upgraded but the upgrade kits are limited in supply.
+
+Karate belts to rank maps aliens, sentries and upgrades: white, yellow,
+orange, green, blue, purple, brown, red, black, pink - total bad-ass, The pink
+level alien is ONE queen which is bad-ass and protected by all the other
+aliens.
+
+Some sentries fire explosives which can either damage the walls, destroy them,
+make them dynamic, floating.  This persists to the last.
+Some ammo pushes the aliens back
+some ammo pulls them forward
+some sentries attract some aliens
+some repel them
+some sentries can move and have AI
+some sentries can use more than one kind of ammo.
+Ammo runs out and needs to be reloaded which takes time and money and can't
+function while that's happening
+There is a limited supply of each kind of ammo even though you are paying for
+it
+some ammo ricochets against the walls until it finds an alien.
+some ammo goes through walls.
+You buy the ammo in specific lots of 5 or 10.
+
+Each sentry shows damage and ammo level
+sentries which are 50% damages become totally incapacitated but still
+reparable sentries which are 100% damaged are not cost-effective to repair
+sentries which are between 1 and 50% damaged will malfunction in some way
+repairing sentries costs time and money, and they can not be used during
+upgrading sentries costs time and money ditto
+aliens damage the sentries, how much?  It depends on the sentry and the alien.
+You can hit repair on a sentry simply to relocate it.  If it is 0% damaged it
+does not cost anything but time.
+
+animatable canvas elements: lines, rects, paths, texts
+
+lots of reverberation
+modern symphony music, sad and suspenseful
+What year is it supposed to be? 2179
+
+- nuke the colony!  Once you think you have lost, all or most colonists killed
+or cocooned, if you leave the colony there someone will want to rescue them
+thus allowing the aliens to seed somewhere else.  Also, if the queen might
+survive, so you might as well nuke it!  The more colonist die the fewer points
+you have. There should be some incentive to nuking the colony at the end of
+the game if you are not going to win it.  It will be cool and when you nuke
+it will optimize to your game points.
+
+- limit the number of aliens at any one time, say 100.  If one escapes or is
+killed then another will come.
+- aliens which are killed turn into x's and do not move but still block
+- Why does a future space colony have a maze in front of their front door?
+For security.  People who grow up there learn to navigate the maze pretty
+quickly.  There's always someone at the front to guide people through the
+maze if they are visitors.  Also, it's way more defensible especially if you
+can drop remote sentries anywhere into it.
+
+Similar to sentries if an alien is damaged 50% it becomes incapacitated, they
+will turn slowly into x's instead of 0's.  If it
+is damaged 1-49% it will not behave optimally.  If it becomes damaged 100%
+it will have another counter where it degrades and after an amount of time
+its extent will become radius 0 and be removed from the game area but will
+leave behind a stain which persists to the end of the game.  The color of the
+alien is the color of the stain left behind.  Like blood stains that
+accumulate.  By the end of the game it should be a big gorey mess.  Cool.
+
+Limited number of upgrade kits and types of upgrades, limited amount of ammo,
+limited number of sentries.  They can become damaged during attack.  The can
+become damaged beyond repair also.  Limited number of technicians with
+different areas of expertise.
+
+Different sentries use potentially different kinds of ammo.  Some that use
+power can have a tether which provides them with unlimited power but the
+tether can become damaged.  I would say something like 5 different kinds of
+ammo.
+
+********************************************************************************
+12/17/2021
+
+backstory
+
+[A message from the ministry of colonial defense to prospective colonial defenders]
+
+In this year of 2179, as you already know, colonies on and off world are protected by maze complexes,
+which are the only entrances or exits to or from the colony.  The inhabitants of the colonies grow up
+knowing the maze which presents no challenge to them.  However any non-colonists need a colonist
+guide.  These were put in place to provide compact bottlenecks where remote sentries can be deployed.
+Remote sentries, upgrades, repair kits, and ammunition are stocked but not unlimited.
+
+As a colonial defender it's your task to be strategic about where, when, and which sentries to deploy.
+There are many different kinds of aliens with a great variety of behaviors.  If you fail, colonists
+will be injured, killed, some cocooned, and potentially become host to more aliens.  They can then
+escape in order to infect other colonies.  If the colony is lost you are authorized, in fact ordered,
+to destroy all.  It's the only way to make sure.  You of course will sadly meet your own demise in
+such an unlikely and unfortunate scenario, but your sacrifice will not be forgotten.
+
+We have provided you with this simulation as a training tool to practice the management of these
+costly defence resources.  If you show skill in this we will gladly employ you as a colonial defender,
+a highly esteemed and lucrative position in colonial governments.
+
+Good luck.
+
+********************************************************************************
+12/18/2021
+
+I need to remove every trace of Aliens references from the whole thing.  If this
+takes off, the people who own the IP for Aliens will come knocking on the door
+and demand payment.  Besides that it's not like I lack any imagination to fail
+to produce my own ideas and content.  It's lame and sell-out to use other
+people's ideas, even if you do get away with it.
+

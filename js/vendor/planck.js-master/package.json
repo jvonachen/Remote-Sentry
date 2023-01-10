@@ -1,0 +1,63 @@
+{
+  "name": "planck-js",
+  "version": "0.3.5",
+  "description": "2D JavaScript physics engine for cross-platform HTML5 game development",
+  "homepage": "http://shakiba.me/planck.js",
+  "keywords": [
+    "box2d",
+    "html5",
+    "javascript",
+    "game",
+    "physics",
+    "engine",
+    "2d",
+    "mobile"
+  ],
+  "license": "zlib",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/shakiba/planck.js.git"
+  },
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "dist/",
+    "doc/",
+    "lib/",
+    "test/",
+    "testbed/"
+  ],
+  "author": "Ali Shakiba",
+  "contributors": [
+    {
+      "name": "Ali Shakiba",
+      "url": "http://shakiba.me/planck.js"
+    },
+    {
+      "name": "Erin Catto",
+      "url": "http://box2d.org/"
+    }
+  ],
+  "devDependencies": {
+    "closure-webpack-plugin": "^1.1.1",
+    "dtslint": "^0.3.0",
+    "expect.js": "*",
+    "express": "^4.13.4",
+    "handlebars": "^4.0.6",
+    "nodemon": "^1.11.0",
+    "serve-index": "^1.7.3",
+    "sinon": "*",
+    "stage-js": "^0.8.10",
+    "tslint": "^5.11.0",
+    "typescript": "^3.0.3",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-middleware": "^3.4.0"
+  },
+  "scripts": {
+    "test": "mocha test/*.js",
+    "build": "webpack -p",
+    "watch": "webpack --watch",
+    "testbed": "nodemon testbed/server.js"
+  }
+}

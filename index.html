@@ -1,0 +1,64 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Remote Sentry</title>
+    <meta name="description" content="A tower defense game: kill the aliens, save the colonists">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="image/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="image/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="image/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="image/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="image/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="image/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="image/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="image/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="image/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="image/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="image/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png">
+    <link rel="manifest" href="image/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="image/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta name="theme-color" content="#fafafa">
+
+    <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+    <script src="js/vendor/planck.js-master/dist/planck.js"></script>
+    <script src="js/plugins.js"></script>
+
+    <script src="js/common.js"></script>
+    <script src="js/alienTypes.js"></script>
+    <script src="js/Queue.js"></script>
+    <script src="js/Graph.js"></script>
+    <script src="js/maze.js"></script>
+    <script src="js/Alien.js"></script>
+    <script src="js/Wall.js"></script>
+    <script src="js/Change.js"></script>
+    <script src="js/Ace.js"></script>
+    <script src="js/sound.js"></script>
+    <script src="js/splash.js"></script>
+    <script src="js/backstory.js"></script>
+    <script src="js/Bullet.js"></script>
+    <script src="js/Sentry.js"></script>
+    <script src="js/Button.js"></script>
+    <script src="js/play.js"></script>
+    <script src="js/passcode.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <canvas id="backStage" width="1366" height="768"></canvas>
+    <canvas id="bloodCanvas" width="1366" height="768"></canvas>
+    <canvas id="stage" width="1366" height="768"></canvas>
+
+    <audio id="splashSound" src="sounds/splash.mp3" type="audio/mpeg"></audio>
+    <audio id="backgroundLoop" src="sounds/backgroundMusicLoop1.mp3" type="audio/mpeg" loop></audio>
+  </body>
+</html>
